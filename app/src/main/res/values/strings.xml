@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UserHub</string>
+    <string name="fragment_users_title">Users</string>
+    <string name="fragment_user_detail_title">Detail</string>
 </resources>
