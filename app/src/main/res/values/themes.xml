@@ -15,4 +15,7 @@
         <!-- Default font family -->
         <item name="fontFamily">@font/dmsans_medium</item>
     </style>
+    <style name="ActionBar" parent="Theme.UserHub">
+        <item name="colorPrimary">@color/white</item>
+    </style>
 </resources>
