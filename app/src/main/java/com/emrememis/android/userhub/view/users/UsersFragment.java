@@ -1,4 +1,4 @@
-package com.emrememis.android.userhub.view;
+package com.emrememis.android.userhub.view.users;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import com.emrememis.android.userhub.databinding.FragmentUsersBinding;
 
 public class UsersFragment extends Fragment {
     private FragmentUsersBinding binding;
+    private UsersAdapter usersAdapter;
     @Nullable
     @Override
     public View onCreateView(
@@ -20,5 +21,15 @@ public class UsersFragment extends Fragment {
     ) {
         binding = FragmentUsersBinding.inflate(inflater);
         return binding.getRoot();
+    }
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        usersAdapter = new UsersAdapter();
+    }
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        binding.fragmentUsersRecyclerView.setAdapter(usersAdapter);
     }
 }

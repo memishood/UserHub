@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/usersFragment"
-        android:name="com.emrememis.android.userhub.view.UsersFragment"
+        android:name="com.emrememis.android.userhub.view.users.UsersFragment"
         android:label="@string/fragment_users_title" >
         <action
             android:id="@+id/action_usersFragment_to_userDetailFragment"
