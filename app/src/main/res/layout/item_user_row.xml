@@ -17,7 +17,7 @@
         android:layout_marginBottom="10dp"
         app:contentPadding="10dp"
         app:cardCornerRadius="4dp"
-        app:cardBackgroundColor="#f9f9f9">
+        app:cardBackgroundColor="@color/card_background_color">
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:textColor="@{user.cached ? @color/purple_500 : @color/black}"
+                android:textColor="@{user.cached ? @color/cached_color : @color/text_color}"
                 android:text="@{user.login}" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </com.google.android.material.card.MaterialCardView>
