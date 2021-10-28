@@ -9,8 +9,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.emrememis.android.userhub.data.model.User;
 import com.emrememis.android.userhub.databinding.ItemUserRowBinding;
 import java.util.ArrayList;
+import javax.inject.Inject;
 
 class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UsersHolder> {
+    @Inject
+    public UsersAdapter() { }
     private final ArrayList<User> users = new ArrayList<>();
     @NonNull
     @Override
@@ -43,10 +46,9 @@ class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UsersHolder> {
         }
         public void bind(User user) {
             binding.setUser(user);
-            //binding.setCached(get cache from db);
             binding.getRoot().setOnClickListener(v -> {
                 final UsersFragmentDirections.ActionUsersFragmentToUserDetailFragment action
-                        = UsersFragmentDirections.actionUsersFragmentToUserDetailFragment(user.logo);
+                        = UsersFragmentDirections.actionUsersFragmentToUserDetailFragment(user.login);
                 Navigation.findNavController(v).navigate(action);
             });
         }
