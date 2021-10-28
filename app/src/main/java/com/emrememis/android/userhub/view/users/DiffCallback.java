@@ -20,7 +20,7 @@ class DiffCallback extends DiffUtil.Callback {
     }
     @Override
     public boolean areItemsTheSame(int oldItemPosition, int newItemPosition) {
-        return oldUsers.get(oldItemPosition).logo.equals(newUsers.get(newItemPosition).logo);
+        return oldUsers.get(oldItemPosition).login.equals(newUsers.get(newItemPosition).login);
     }
     @Override
     public boolean areContentsTheSame(int oldItemPosition, int newItemPosition) {

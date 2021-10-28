@@ -6,9 +6,6 @@
         <variable
             name="user"
             type="com.emrememis.android.userhub.data.model.User" />
-        <variable
-            name="cached"
-            type="boolean" />
     </data>
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -37,8 +34,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:textColor="@{cached ? @color/purple_200 : @color/black}"
-                android:text="@{user.logo}" />
+                android:textColor="@{user.cached ? @color/purple_200 : @color/black}"
+                android:text="@{user.login}" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </com.google.android.material.card.MaterialCardView>
 </layout>
