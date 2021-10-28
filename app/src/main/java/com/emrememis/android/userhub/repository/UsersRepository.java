@@ -36,7 +36,7 @@ public class UsersRepository {
 
     public List<User> mapUsers(List<User> users) {
         for (User user : users) {
-            user.setCached(cacheDatabase.isCached(user));
+            user.setCached(cacheDatabase.isCached(user.login));
         }
         return users;
     }
@@ -54,7 +54,7 @@ public class UsersRepository {
 
     public Search mapSearchedUsers(Search result) {
         for (User user : result.users) {
-            user.setCached(cacheDatabase.isCached(user));
+            user.setCached(cacheDatabase.isCached(user.login));
         }
         return result;
     }

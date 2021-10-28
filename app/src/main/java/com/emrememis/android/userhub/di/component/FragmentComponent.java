@@ -4,7 +4,7 @@ import android.content.Context;
 import com.emrememis.android.userhub.di.module.DatabaseModule;
 import com.emrememis.android.userhub.di.module.NetworkModule;
 import com.emrememis.android.userhub.di.scope.FragmentScope;
-import com.emrememis.android.userhub.view.UserDetailFragment;
+import com.emrememis.android.userhub.view.user_detail.UserDetailFragment;
 import com.emrememis.android.userhub.view.users.UsersFragment;
 
 import dagger.BindsInstance;
