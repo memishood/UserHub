@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/userDetailFragment"
-        android:name="com.emrememis.android.userhub.view.UserDetailFragment"
+        android:name="com.emrememis.android.userhub.view.user_detail.UserDetailFragment"
         android:label="@string/fragment_user_detail_title">
         <argument
             android:name="login"

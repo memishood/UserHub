@@ -2,7 +2,7 @@ package com.emrememis.android.userhub.data.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class User {
+public class UserDetail {
     public String login;
     public int id;
     @SerializedName("node_id")
@@ -35,8 +35,24 @@ public class User {
     public String type;
     @SerializedName("site_admin")
     public boolean siteAdmin;
-
-    private boolean cached;
-    public boolean getCached() { return this.cached; }
-    public void setCached(boolean cached) { this.cached = cached; }
+    public String name;
+    public String company;
+    public String blog;
+    public String location;
+    public String email;
+    public Object hireable;
+    public String bio;
+    @SerializedName("twitter_username")
+    public String twitterUsername;
+    @SerializedName("public_repos")
+    public int publicRepos;
+    @SerializedName("public_gists")
+    public int publicGists;
+    public int followers;
+    public int following;
+    @SerializedName("created_at")
+    public String createdAt;
+    @SerializedName("updated_at")
+    public String updatedAt;
 }
+
