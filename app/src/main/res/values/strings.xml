@@ -3,4 +3,6 @@
     <string name="fragment_users_title">Users</string>
     <string name="fragment_users_search_edit_text_hint">Search user..</string>
     <string name="fragment_user_detail_title">Detail</string>
+    <string name="fragment_user_detail_following">FOLLOWING (%1d)</string>
+    <string name="fragment_user_detail_followers">FOLLOWERS (%1d)</string>
 </resources>
