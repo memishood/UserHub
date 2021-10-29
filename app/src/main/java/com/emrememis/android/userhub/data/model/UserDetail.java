@@ -1,7 +1,6 @@
 package com.emrememis.android.userhub.data.model;
 
 import com.google.gson.annotations.SerializedName;
-import java.util.Date;
 
 public class UserDetail {
     public String login;
@@ -52,8 +51,8 @@ public class UserDetail {
     public int followers;
     public int following;
     @SerializedName("created_at")
-    public Date createdAt;
+    public String createdAt;
     @SerializedName("updated_at")
-    public Date updatedAt;
+    public String updatedAt;
 }
 
