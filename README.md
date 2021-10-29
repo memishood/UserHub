@@ -17,6 +17,8 @@ height=128>
   <a href="https://github.com/bumptech/glide"><li>Glide</li></a>
 </ul>
 
+<h3>You can download apk from <a href="https://drive.google.com/file/d/1s9DPycglP7SVzijD-35kJR4UEdEIwaGq/view?usp=sharing">here.</a></h3>
+
 <h3>Screenshots</h3>
 <p>
    <img 
